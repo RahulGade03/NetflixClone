@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-img{
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstSep{
+    bottom: 8vh;
+}
+
+.bg-imgInside{
+    height: 100vh;
+    width:100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outernav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+.nav{
+    display: flex;
+    width: 80vw;
+}
+
+.nav1{
+    width: 30vw;
+}
+
+.nav2{
+    display: flex;
+    width: 50vw;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    z-index: 3;
+    height: 50%;
+    width: 60%;
+    gap: 25px;
+}
+
+.Text1{
+    gap: 20px;
+}
+
+.hero p{
+    text-align: center;
+    color: white;
+}
+
+.BoldText{
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.SmallText{
+    font-size: 16px;
+}
+
+.Text2{
+    font-size: 16px;
+}
+
+.Text3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    width: 99%;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.Text3 input{
+    padding: 10px 120px 10px 5px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    font-weight: 400;
+    border: 1px white solid;
+    border-radius: 4px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+
+.Text3 button{
+    background-color: red;
+    color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+pre{
+    display: flex;
+    align-items: center;
+}
+
+.language{
+border: 2px solid white;
+background-color: rgba(0, 00, 0, 0.3);
+color: white;
+font-size: 15px;
+padding: 8px 15px;
+border-radius: 7px;
+appearance: none;
+}
+
+.signIn{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: none;
+}
+
+.nav2{
+    gap: 10px;
+}
+
+.separation{
+    height: 7px;
+    width: 98vw;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    z-index: 4;
+    opacity: 1;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 99%;
+
+    @media only screen and (max-width: 600px){
+        flex-direction: column;
+    }
+}
+
+.innerFirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.innerText{
+    flex-direction: column;
+}
+
+.inimage{
+    position: static;
+    max-height: 100%;
+    z-index: 4;
+    max-width: 100%;
+    pointer-events: none;
+}
+
+.invideo{
+    position: absolute;
+    max-height: 50%;
+    max-width: 37%;
+    pointer-events: none;
+}
+
+span{
+    color: white;
+    text-align: center;
+    font-size: min(3vh, 24px);
+}
+
+.boldInner{
+    font-size: min(5vh, 48px);
+    font-weight: 700;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.faq > p:first-child{
+    margin-top: 10px;
+    font-size: min(30px, 7vw);
+    font-weight: 600;
+}
+
+.question{
+    color: white;
+    font-size: 25px;
+}
+
+.qus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    width: 80vw;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width:600px) {
+        width: 90vw;
+        padding: 5px;
+    }
+}
+
+/* button{
+    transition: all 0.1s ease-in-out;
+}
+
+button:active{
+    background-color: rgb(160, 1, 1);
+} */
+
+.qus:hover{
+    background-color: #535353;
+}
+
+.plus{
+    position: relative;
+    color: white;
+    font-size: 40px;
+}
+
+.Text4 p{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+footer > div > p{
+    text-align: left;
+    text-decoration: underline;
+    margin: 8px;
+}
+
+footer > p{
+    color: rgb(162, 162, 162);
+}
+
+.mainGrid{
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    @media screen and (max-width:600px) {
+        grid-template-columns: 50% 50%
+    }
+}
+
+.mainGrid > p{
+    display: inline;
+    color: rgb(162, 162, 162);
+}
+
+.langBthEnd{
+    padding: 30px;
+    display: block;
+}
+
+.NetflixIndia{
+    text-decoration: none;
+    margin-bottom: 70px;
+}
